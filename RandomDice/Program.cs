@@ -12,6 +12,18 @@ namespace RandomDice
 
             // Create a random number generator.
             Random r = new Random();
+
+            // Create a variable to store the total.
+            int total = 0;
+
+            // Roll n dices.
+            for (int i = 0; i < n; i++)
+            {
+                total += r.Next(1,7);
+            }
+
+            // Print the total.
+            Console.WriteLine("Total: " + total);
         }
     }
 }
