@@ -6,7 +6,12 @@ namespace RandomDice
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Let the user enter a number n.
+            Console.Write("Enter a number n: ");
+            int n = int.Parse(Console.ReadLine());
+
+            // Create a random number generator.
+            Random r = new Random();
         }
     }
 }
