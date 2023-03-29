@@ -30,6 +30,12 @@ namespace Tempo
 
             // Ths code stops the Stopwatch object crono2.
             crono2.Stop();
+
+            // Prints the elapsed time in seconds of crono1.
+            Console.WriteLine("Crono1: {0:F2}", crono1.Elapsed.TotalSeconds);
+
+            // Prints the elapsed time in seconds of crono2.
+            Console.WriteLine("Crono2: {0:F2}", crono2.Elapsed.TotalSeconds);
         }
     }
 }
