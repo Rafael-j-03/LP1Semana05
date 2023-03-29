@@ -16,14 +16,20 @@ namespace Tempo
             // This code starts the Stopwatch object crono1.
             crono1.Start();
 
-            // Add sleep time 500 milliseconds
+            // Add sleep time 500 milliseconds.
             Thread.Sleep(500);
 
-            // This code stops the Stopwatch object crono2
+            // This code starts the Stopwatch object crono2.
             crono2.Start();
 
-            // Add sleep time 300 milliseconds
+            // Add sleep time 300 milliseconds.
             Thread.Sleep(300);
+
+            // This code stops the Stopwatch object crono1.
+            crono1.Stop();
+
+            // Ths code stops the Stopwatch object crono2.
+            crono2.Stop();
         }
     }
 }
