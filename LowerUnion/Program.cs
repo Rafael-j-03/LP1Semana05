@@ -12,6 +12,9 @@ namespace LowerUnion
                 args[i] = args[i].ToLower();
             }
 
+            // Put the array of args by alphabetical order
+            Array.Sort(args);
+
             // Print the array of args
             for (int i = 0; i < args.Length; i++)
             {
