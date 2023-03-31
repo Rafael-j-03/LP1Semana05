@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace LowerUnion
 {
@@ -15,11 +16,19 @@ namespace LowerUnion
             // Put the array of args by alphabetical order
             Array.Sort(args);
 
-            // Print the array of args
+            // Put the array of args separated by a _ with stringWriter
+            StringWriter separate = new StringWriter();
             for (int i = 0; i < args.Length; i++)
             {
-                Console.WriteLine(args[i]);
+                separate.Write(args[i]);
+                if (i != args.Length - 1)
+                {
+                    separate.Write("_");
+                }
             }
+
+            // Print the array of args
+            Console.WriteLine(separate);
         }
     }
 }
